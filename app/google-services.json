@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "279597387021",
+    "firebase_url": "https://btl-appbandienthoai-4fa01-default-rtdb.firebaseio.com",
+    "project_id": "btl-appbandienthoai-4fa01",
+    "storage_bucket": "btl-appbandienthoai-4fa01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:279597387021:android:e9b050cbc3aafe6080b444",
+        "android_client_info": {
+          "package_name": "com.example.mybtl_appbandienthoai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "279597387021-9vba3o29rvj0l608ck7unv1qcr945udl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAep3Id-qmSXOY2aJ6h053_4w6yTwqhTuI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "279597387021-9vba3o29rvj0l608ck7unv1qcr945udl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

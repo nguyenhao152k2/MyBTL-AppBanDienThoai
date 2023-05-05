@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="8dp"
+    app:cardCornerRadius="4dp"
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imggh_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/iconnew_h512"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="20sp"
+                android:id="@+id/tvgh_tensp"
+                android:textStyle="bold"
+                android:layout_marginStart="20dp"
+                android:text="Tên sản phẩm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvgh_giasp"
+                    android:layout_marginStart="20dp"
+                    android:text="25000000"
+                    android:textSize="18sp"
+                    android:textColor="@color/green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <CheckBox
+                    android:id="@+id/checkbox1"
+                    android:layout_marginLeft="80dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp">
+
+                <ImageView
+                    android:id="@+id/imggh_tru"
+                    android:src="@drawable/baseline_remove_24"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvgh_soluong"
+                    android:text=" 1 "
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/imggh_cong"
+                    android:src="@drawable/baseline_add_24"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"/>
+<!--                <Button-->
+<!--                    android:id="@+id/btnXoa"-->
+<!--                    android:background="@color/holo_red_light"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:text="Xóa"-->
+<!--                    android:layout_marginLeft="90dp"-->
+<!--                    android:layout_width="70dp"-->
+<!--                    android:layout_height="35dp"/>-->
+                <ImageView
+                    android:id="@+id/imgXoa"
+                    android:src="@drawable/baseline_delete_24"
+                    android:layout_marginLeft="110dp"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

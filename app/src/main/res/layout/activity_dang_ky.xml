@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DangKyActivity"
+    android:background="#DCEBFE"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/top_login"/>
+    <TextView
+        android:id="@+id/tv1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="80dp"
+        android:textColor="#6C5DD2"
+        android:textSize="40sp"
+        android:layout_marginStart="120dp"
+        android:textStyle="bold"
+        android:text="Đăng Ký"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:id="@+id/layout"
+        app:layout_constraintTop_toBottomOf="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Họ"
+                android:textColor="#6C5DD2"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/txtHo"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/background_edit"
+                android:ems="10"
+                android:hint="Nhập họ"
+                android:inputType="textPersonName"
+                android:textColor="#707070"
+                android:textColorHint="#707070" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="32dp"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tên"
+                android:textColor="#6C5DD2"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/txtTen"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/background_edit"
+                android:ems="10"
+                android:hint="Nhập tên"
+                android:paddingLeft="10dp"
+                android:inputType="textPersonName"
+                android:textColor="#707070"
+                android:textColorHint="#707070" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv2"
+        app:layout_constraintTop_toBottomOf="@+id/layout"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#6C5DD2"
+        android:textSize="18sp"
+        android:text="Tên đăng nhập"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        app:layout_constraintTop_toBottomOf="@+id/tv2"
+        android:id="@+id/txtTendn"
+        android:layout_marginTop="5dp"
+        android:hint="Nhập tên đăng nhập"
+        android:paddingLeft="10dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/background_edit"
+        android:layout_height="54dp"/>
+    <TextView
+        android:id="@+id/tv3"
+        app:layout_constraintTop_toBottomOf="@+id/txtTendn"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#6C5DD2"
+        android:textSize="18sp"
+        android:text="Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        app:layout_constraintTop_toBottomOf="@+id/tv3"
+        android:id="@+id/txtEmail"
+        android:layout_marginTop="5dp"
+        android:hint="Nhập email"
+        android:layout_marginStart="32dp"
+        android:paddingLeft="10dp"
+        android:layout_marginEnd="32dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/background_edit"
+        android:layout_height="54dp"/>
+    <TextView
+        android:id="@+id/tv4"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#6C5DD2"
+        android:textSize="18sp"
+        android:text="Mật khẩu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        app:layout_constraintTop_toBottomOf="@+id/tv4"
+        android:id="@+id/txtMatkhau"
+        android:layout_marginTop="5dp"
+        android:hint="Nhập mật khẩu"
+        android:paddingLeft="10dp"
+        android:inputType="textPassword"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/background_edit"
+        android:layout_height="54dp"/>
+    <TextView
+        android:id="@+id/tv5"
+        app:layout_constraintTop_toBottomOf="@+id/txtMatkhau"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#6C5DD2"
+        android:textSize="18sp"
+        android:text="Xác nhận mật khẩu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        app:layout_constraintTop_toBottomOf="@+id/tv5"
+        android:id="@+id/txtXacnhanmk"
+        android:layout_marginTop="5dp"
+        android:hint="Nhập tên đăng nhập"
+        android:paddingLeft="10dp"
+        android:inputType="textPassword"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/background_edit"
+        android:layout_height="54dp"/>
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@+id/txtXacnhanmk"
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="Bạn đã có tài khoản ?"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tvDangnhap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Đăng nhập?"
+            android:textColor="@color/red" />
+    </LinearLayout>
+    <Button
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/btnDangky"
+        style="@android:style/Widget.Button"
+        android:background="@drawable/button_background"
+        android:text="Đăng ký"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff" />
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imageView4"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:srcCompat="@drawable/top_login" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Đăng ký"-->
+<!--                android:textColor="#6C5DD2"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="40sp"/>-->
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginStart="32dp"-->
+<!--                    android:layout_marginTop="16dp"-->
+<!--                    android:layout_marginEnd="8dp"-->
+<!--                    android:layout_weight="0.5"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/textView8"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Họ"-->
+<!--                        android:textColor="#6C5DD2"-->
+<!--                        android:textSize="18sp" />-->
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/txtHo"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="54dp"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:background="@drawable/background_edit"-->
+<!--                        android:ems="10"-->
+<!--                        android:hint="Nhập họ"-->
+<!--                        android:inputType="textPersonName"-->
+<!--                        android:textColor="#707070"-->
+<!--                        android:textColorHint="#707070" />-->
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginStart="8dp"-->
+<!--                    android:layout_marginTop="16dp"-->
+<!--                    android:layout_marginEnd="32dp"-->
+<!--                    android:layout_weight="0.5"-->
+<!--                    android:orientation="vertical">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/textView9"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Tên"-->
+<!--                        android:textColor="#6C5DD2"-->
+<!--                        android:textSize="18sp" />-->
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/txtTen"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="54dp"-->
+<!--                        android:layout_marginTop="8dp"-->
+<!--                        android:background="@drawable/background_edit"-->
+<!--                        android:ems="10"-->
+<!--                        android:hint="Nhập tên"-->
+<!--                        android:inputType="textPersonName"-->
+<!--                        android:textColor="#707070"-->
+<!--                        android:textColorHint="#707070" />-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="361dp"-->
+<!--                android:layout_height="90dp"-->
+<!--                android:layout_marginStart="32dp"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:layout_marginEnd="32dp"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView2"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Tên đăng nhập"-->
+<!--                    android:textColor="#6C5DD2"-->
+<!--                    android:textSize="18sp" />-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/txtTendn"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="54dp"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:background="@drawable/background_edit"-->
+<!--                    android:ems="10"-->
+<!--                    android:hint="Nhập tên đăng nhập"-->
+<!--                    android:inputType="textPersonName"-->
+<!--                    android:textColor="#707070"-->
+<!--                    android:textColorHint="#707070" />-->
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="361dp"-->
+<!--                android:layout_height="90dp"-->
+<!--                android:layout_marginStart="32dp"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:layout_marginEnd="32dp"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/textView3"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Mật khẩu"-->
+<!--                    android:textColor="#6C5DD2"-->
+<!--                    android:textSize="18sp" />-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/txtMatkhau"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="54dp"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:background="@drawable/background_edit"-->
+<!--                    android:ems="10"-->
+<!--                    android:hint="Nhập mật khẩu"-->
+<!--                    android:inputType="textPassword"-->
+<!--                    android:textColor="#707070"-->
+<!--                    android:textColorHint="#707070" />-->
+<!--            </LinearLayout>-->
+<!--            <androidx.appcompat.widget.AppCompatButton-->
+<!--                android:layout_width="200dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/btnDangky"-->
+<!--                style="@android:style/Widget.Button"-->
+<!--                android:background="@drawable/button_background"-->
+<!--                android:text="Đăng ký"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginTop="32dp"-->
+<!--                android:textSize="18sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="#ffffff"/>-->
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/tvDangnhap"-->
+<!--                android:text="Bạn đã có tài khoản? Đăng nhập"-->
+<!--                android:textAlignment="center"-->
+<!--                android:layout_marginTop="32dp"-->
+<!--                android:textColor="#000000"/>-->
+<!--        </LinearLayout>-->
+
+<!--    </ScrollView>-->
+</androidx.constraintlayout.widget.ConstraintLayout>
